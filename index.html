@@ -2,116 +2,260 @@
 <html>
   <head>
     <title>jieyi's</title>
-    </head>
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-      img {
-      }
-      body {
-        background-color: #c2c4c0;
-        background-size: cover;
-        margin: 0px 0px 0px 0px;
-      }
-
-      h1 {
-        justify-content: center;
-        font-size: 72px;
-        color: white;
-        letter-spacing: 2px;
-        margin: 2%;
-        margin-left: 0%;
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-      }
-
-      p {
-      }
-      .textbox {
-        justify-content: center;
-        padding-top: 30%;
-        padding-left: 10%;
-        font-family: Roboto, serif;
-      }
-
-      .jy {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-      }
-
-      .responsive {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .maincontent {
-        display: flex;
-      }
-
-      .item {
-        flex: 1;
-        justify-content: center;
-      }
-
-      .item2 {
-        flex: 1;
-        justify-content: center;
-      }
-      .row {
-        display: flex;
-      }
-      .column {
-        flex: 33.33%;
-        padding: 0px;
-      }
-      .contact {
-        color: whitesmoke;
-        margin: 3px;
-        justify-content: center;
-        font-weight: bold;
-      }
-      .info {
-        margin: 1px;
-        justify-content: center;
-        display: block;
-        margin-left: 4px;
-        margin-top: 3px;
-        width: auto;
-      }
-      .info2 {
-        margin: 1px;
-        justify-content: center;
-        display: block;
-        margin-left: 18px;
-        margin-right: auto;
-        margin-top: 3px;
-        width: auto;
-      }
-      .info3 {
-        margin: 1px;
-        justify-content: center;
-        display: block;
-        margin-left: 2px;
-        margin-right: auto;
-        margin-top: 3px;
-        width: auto;
-      }
-
-      a:link {
-        color: #505050;
-      }
-      a:visited {
-        color: #707070;
-      }
-      a:hover {
-        color: black;
-      }
-      /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;} /* End https://www.cursors-4u.com */
-    </style>
   </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    html {
+      height: 100%;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      overflow-y: hidden;
+      background-color: #c2c4c0;
+      background-size: cover;
+      margin: 0px 0px 0px 0px;
+      animation: fadeIn linear 2s;
+      -webkit-animation: fadeIn linear 2s;
+      -moz-animation: fadeIn linear 2s;
+      -o-animation: fadeIn linear 2s;
+      -ms-animation: fadeIn linear 2s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      justify-content: center;
+      font-size: 72px;
+      color: white;
+      letter-spacing: 2px;
+      margin: 2%;
+      margin-left: 0%;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      position: relative;
+    }
+
+    p {
+    }
+    .textbox {
+      justify-content: center;
+      padding-top: 30%;
+      padding-left: 10%;
+      font-family: Roboto, serif;
+    }
+
+    .jy {
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+    }
+
+    .responsive {
+      position: relative;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: 50% 25%;
+    }
+
+    .maincontent {
+      display: flex;
+      min-height: 100%;
+      height: 100%;
+    }
+
+    .item {
+      flex: 1;
+      justify-content: center;
+      width: 100%;
+      min-height: 100%;
+
+      animation: fadeIn 2s;
+      -webkit-animation: fadeIn 2s;
+      -moz-animation: fadeIn 2s;
+      -o-animation: fadeIn 2s;
+      -ms-animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .item2 {
+      flex: 1;
+      justify-content: center;
+    }
+    .row {
+      display: flex;
+    }
+    .column {
+      flex: 33.33%;
+      padding: 0px;
+    }
+    .info::before,
+    .info2::before,
+    .info3::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+
+    .info:hover::before,
+    .info2:hover::before,
+    .info3:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .info::before,
+    .info2::before,
+    .info3::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      bottom: 0%;
+      left: 0%;
+      inset: 0 0 0 0;
+      background-color: #ffffff;
+      z-index: -1;
+      transition: transform 0.3s ease;
+    }
+
+    .contact {
+      color: whitesmoke;
+      margin: 3px;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .info {
+      margin: 1px;
+      justify-content: center;
+      display: block;
+      margin-left: 4px;
+      margin-top: 3px;
+      width: fit-content;
+      position: relative;
+    }
+    .info2 {
+      margin: 1px;
+      justify-content: center;
+      display: block;
+      margin-left: 18px;
+      margin-right: auto;
+      margin-top: 3px;
+      width: fit-content;
+      position: relative;
+    }
+    .info3 {
+      margin: 1px;
+      justify-content: center;
+      display: block;
+      margin-left: 2px;
+      margin-right: auto;
+      margin-top: 3px;
+      width: fit-content;
+      position: relative;
+    }
+
+    a:link {
+      color: #505050;
+    }
+    a:visited {
+      color: #707070;
+    }
+    a:hover {
+      color: black;
+    }
+  </style>
   <body>
     <div class="maincontent">
       <div class="item">
