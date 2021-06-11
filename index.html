@@ -14,7 +14,8 @@
     body {
       width: 100%;
       height: 100%;
-      overflow-y: hidden;
+      /* overflow-y: hidden; */
+
       background-color: #c2c4c0;
       background-size: cover;
       margin: 0px 0px 0px 0px;
@@ -81,8 +82,6 @@
       position: relative;
     }
 
-    p {
-    }
     .textbox {
       justify-content: center;
       padding-top: 30%;
@@ -255,6 +254,94 @@
     a:hover {
       color: black;
     }
+
+    /* hovertrial */
+
+    .popupbutton {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 70px;
+      padding: 10px;
+      border-radius: 2px;
+      text-align: center;
+      overflow: hidden;
+      z-index: 10000;
+    }
+
+    .popupbutton:hover + .hide {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+      position: fixed;
+      margin-top: 0px;
+      margin-right: 10px;
+      right: 6%;
+      text-align: center;
+      font-family: Roboto, serif;
+      font-size: 12px;
+
+      box-sizing: border-box;
+      width: 150px;
+      height: 150px;
+      /* padding: 80px 1em 0 1em; */
+      padding-top: 3%;
+
+      margin: 10px 100px;
+
+      background-color: white;
+      border-radius: 100% 100% 0 0;
+    }
+    .hide::before,
+    .hide::after {
+      content: "";
+
+      /* We position our pseudo-elements on the left and
+     right sides of the box, but always at the bottom */
+      position: absolute;
+      bottom: 0;
+
+      /* This makes sure our pseudo-elements will be below
+     the box content whatever happens. */
+      z-index: -1;
+
+      background-color: white;
+      border-radius: 100%;
+      margin-top: 10px;
+    }
+    .hide::before {
+      /* This is the  size of the clouds left ear */
+      width: 125px;
+      height: 125px;
+
+      /* We slightly move it to the left */
+      left: -80px;
+
+      /* To make sure that the bottom of the cloud
+     remains flat, we must make the bottom right
+     corner of the left ear square. */
+      border-bottom-right-radius: 0;
+    }
+    .hide::after {
+      /* This is the size of the clouds left ear */
+      width: 100px;
+      height: 100px;
+
+      /* We slightly move it to the right */
+      right: -60px;
+
+      /* To make sure that the bottom of the cloud
+     remains flat, we must make the bottom left
+     corner of the right ear square. */
+      border-bottom-left-radius: 0;
+    }
+    .hovericon {
+      height: 70px;
+      width: 100px;
+    }
   </style>
   <body>
     <div class="maincontent">
@@ -262,6 +349,14 @@
         <img src="images/IMG_20190802_130016.jpg" class="responsive" />
       </div>
       <div class="item2">
+        <div class="popupbutton">
+          <img src="images/hovericonblack.png" class="hovericon" />
+        </div>
+        <div class="hide">
+          <p>What's the difference between a knife and my life?</p>
+
+          <p>A: The knife has a point.</p>
+        </div>
         <div class="textbox">
           <p class="jy">JIEYI KONG.</p>
           <h1>hello.</h1>
